@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+   xmlns:p="http://www.springframework.org/schema/p"    
+    xmlns:c="http://www.springframework.org/schema/c" 
+    xmlns:context="http://www.springframework.org/schema/context"  
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+    https://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    https://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <context:annotation-config />
+	<bean id="address" class="com.ibm.springcoredemo.beans.Address" p:hno="1001" 
+	p:streetName="TestName" p:city="Bangalore" p:state="Karnataka" />
+	<bean id="per1" class="com.ibm.springcoredemo.beans.Person" p:ssn="7001" p:name="TestPerson"/>
+	
+	<!-- <bean id="add1" class="com.ibm.springcoredemo.beans.Address" c:hno="1001" 
+	c:streetName="TestName" c:city="Bangalore" c:state="Karnataka" />
+	
+	<bean id="per1" class="com.ibm.springcoredemo.beans.Person" c:ssn="7001" c:name="TestPerson" c:address-ref="add1"/> -->
+		
+	<!-- 
+	<bean id="country1" class="com.ibm.springcoredemo.beans.Country">
+		<property name="countryId" value="9001" />
+		<property name="countryName" value="India" />
+		<property name="states">
+			<list>
+				<value>West Bengal</value>
+				<value>Delhi</value>
+				<value>Andra Pradesh</value>
+				<value>Goa</value>	
+				<value>Harayana</value>
+			</list>
+		</property>
+	</bean>
+	 -->
+	 
+	 
+</beans>
